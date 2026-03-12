@@ -3,6 +3,7 @@ import History from "@/component/(homepage)/History";
 import Homepage from "@/component/(homepage)/Homepage";
 import ImageContainer from "@/component/(homepage)/Image";
 import ResultsPreview from "@/component/(homepage)/ResultsPreview";
+import ReviewSlider from "@/component/(homepage)/ReviewSlider";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <History />
       <CoursePreview />
       <ResultsPreview />
+      <ReviewSlider />
     </>
   );
 }
