@@ -2,6 +2,7 @@ import CoursePreview from "@/component/(homepage)/CoursePreview";
 import History from "@/component/(homepage)/History";
 import Homepage from "@/component/(homepage)/Homepage";
 import ImageContainer from "@/component/(homepage)/Image";
+import ResultsPreview from "@/component/(homepage)/ResultsPreview";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <ImageContainer />
       <History />
       <CoursePreview />
+      <ResultsPreview />
     </>
   );
 }

@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} md:px-52 md:py-4 bg-gray-100 antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} md:px-48 md:py-4 bg-gray-100 antialiased`}
       >
         <Navbar />
         {children}

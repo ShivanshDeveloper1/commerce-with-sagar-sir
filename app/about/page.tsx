@@ -105,7 +105,7 @@ const AboutAndFAQ = () => {
             {/* Optimized container for mobile: smaller border and border-radius */}
             <div className="relative z-10 rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border-[6px] md:border-[12px] border-blue-50">
               <Image
-                src="/commercecoahing.jpeg"
+                src="/sir.jpeg"
                 alt="Sagar Sir Classroom"
                 width={600}
                 height={700}
