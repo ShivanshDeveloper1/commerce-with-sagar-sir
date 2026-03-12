@@ -118,7 +118,7 @@ const Navbar = () => {
               className="w-full bg-blue-600 text-white py-4 rounded-xl font-bold"
               onClick={() => router.push("contact")}
             >
-              Get in Touch
+              Contact Us
             </button>
           </div>
         </div>

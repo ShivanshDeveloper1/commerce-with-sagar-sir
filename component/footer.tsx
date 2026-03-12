@@ -67,7 +67,7 @@ export default function CommerceFooter() {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-slate-950 text-white font-sans mt-10">
+    <footer className="relative overflow-hidden bg-slate-900 text-white font-sans mt-10">
       {/* Animated top strip */}
       <div className="h-1 w-full bg-gradient-to-r from-blue-700 via-blue-400 to-blue-700 bg-[length:200%_100%] animate-pulse" />
 

@@ -9,15 +9,15 @@ import { ArrowRight, BookOpen, GraduationCap } from "lucide-react";
 const courses = [
   {
     id: "class-12-accounts",
-    title: "Class 12: Accountancy",
+    title: "Class 12: Accounts",
     shortDescription:
       "Complete syllabus coverage with focus on board exam patterns and practical logic.",
     image: "/commercecoahing.jpeg", // Replace with your actual image path
     tag: "Board Special",
   },
   {
-    id: "class-11-economics",
-    title: "Class 11: Economics",
+    id: "class-11-accounts",
+    title: "Class 11: Accounts",
     shortDescription:
       "Build a rock-solid foundation in Microeconomics and Statistics from scratch.",
     image: "/class12h.jpeg", // Replace with your actual image path
