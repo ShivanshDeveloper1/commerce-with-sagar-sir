@@ -19,7 +19,7 @@ const BlogComingSoon = () => {
           className="w-20 h-1 bg-blue-600 mx-auto mb-8"
         />
 
-        <h1 className="text-5xl md:text-7xl font-black text-slate-900 mb-6 tracking-tighter">
+        <h1 className="text-5xl md:text-7xl font-black text-red-400 mb-6 tracking-tighter">
           THE <span className="text-blue-600">BLOG</span> IS <br />
           UNDER CONSTRUCTION
         </h1>
