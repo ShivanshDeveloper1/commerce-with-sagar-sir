@@ -72,16 +72,16 @@ const courses = [
 const quickLinks = [
   { name: "About Sharan Sir", href: "/about" },
   { name: "Free Notes PDF", href: "" },
-  { name: "Video Lectures", href: "/videos" },
+
   { name: "Test Series", href: "" },
   { name: "Results & Toppers", href: "/results" },
-  { name: "Student Reviews", href: "" },
+  { name: "Student Reviews", href: "/" },
   { name: "Contact Us", href: "/contact" },
 ];
 
 const contactItems = [
   { icon: "📍", label: "Location", value: "Saharanpur, India" },
-  { icon: "📞", label: "Call / WhatsApp", value: "+91 7618550475" },
+  { icon: "📞", label: "Call / WhatsApp", value: "+91 8218615688" },
   { icon: "✉", label: "Email", value: "shivanshsingh4539@gmail.com" },
 ];
 

@@ -19,26 +19,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Best Commerce Coaching in Saharanpur | Class 11 & 12 Academy",
+  title: "Best Accountancy Coaching in Saharanpur | Class 11 & 12 Academy",
   description:
-    "Looking for top-rated commerce coaching in Saharanpur? We offer expert classes for Class 11 & 12 Accountancy, Economics, and Business Studies. Join the success batch now!",
+    "Looking for top-rated Accountancy coaching in Saharanpur? We offer expert classes for Class 11 & 12 Accountancy with strong conceptual learning and board exam preparation. Join the success batch now!",
   keywords:
-    "Commerce Coaching Saharanpur, Class 11 Commerce, Class 12 Accounts Saharanpur, Best Tutors Saharanpur",
+    "Accountancy Coaching Saharanpur, Class 11 Accountancy Saharanpur, Class 12 Accounts Saharanpur, Best Accounts Tutor Saharanpur",
   openGraph: {
-    title: "Saharanpur Commerce Academy - Class 11 & 12 Batches",
+    title: "Saharanpur Accountancy Academy - Class 11 & 12 Batches",
     description:
-      "Expert faculty for Commerce in Saharanpur. Boost your board exam scores.",
-    images: ["/images/og-image.jpg"], // Make sure to create a shareable image
+      "Expert Accountancy faculty in Saharanpur. Boost your board exam scores with concept-based learning.",
+    images: ["/images/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Commerce Institute in Saharanpur",
+    title: "Best Accountancy Institute in Saharanpur",
     description:
-      "Achieve 95% in your Board exams with our Saharanpur based experts.",
+      "Achieve 95%+ in your board exams with expert Accountancy coaching in Saharanpur.",
     images: ["/images/og-image.jpg"],
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

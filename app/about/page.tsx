@@ -66,7 +66,7 @@ const AboutAndFAQ = () => {
             </h4>
             <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-black text-blue-950 leading-[1.1] md:leading-[0.9] mb-6 md:mb-8">
               Defining the Future of{" "}
-              <span className="text-blue-600">Commerce.</span>
+              <span className="text-blue-600">Accountancy.</span>
             </h2>
             <p className="text-gray-600 text-base md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
               At <strong>Commerce with Sagar Sir</strong>, we believe education

@@ -7,7 +7,7 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({ name: "", selectedClass: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const phoneNumber = "917618550475"; // Ensure country code is included
+  const phoneNumber = "918218615688"; // Ensure country code is included
 
   const handleEnroll = (e) => {
     e.preventDefault();
@@ -97,7 +97,7 @@ const ContactSection = () => {
             <h2 className="text-3xl font-black text-white mb-8">Direct Contact</h2>
 
             <div className="space-y-8">
-              <ContactLink icon={<Phone size={20} />} label="Call Us" value="+91 76185 50475" href="tel:+917618550475" />
+              <ContactLink icon={<Phone size={20} />} label="Call Us" value="+91 76185 50475" href="tel:+918218615688" />
               <ContactLink icon={<Mail size={20} />} label="Email Us" value="shivanshsingh4539@gmail.com" href="mailto:shivanshsingh4539@gmail.com" />
               <div className="flex items-center gap-5">
                 <div className="w-12 h-12 rounded-2xl bg-red-600/20 flex items-center justify-center text-red-500 shadow-inner">
@@ -105,7 +105,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-white/40 text-[10px] font-black uppercase tracking-[0.2em]">Our Campus</p>
-                  <p className="text-white font-bold leading-tight">Jain Mandir Awas Vikas Park, Saharanpur</p>
+                  <p className="text-white font-bold leading-tight">Makhan Colony ( Near Subhash Atta Chakki ) , Saharanpur</p>
                 </div>
               </div>
             </div>
