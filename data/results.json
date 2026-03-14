@@ -1,8 +1,29 @@
 [
-  { "id": 6, "image": "/11.png" },
-  { "id": 1, "image": "/ANSH GULATI.png" },
-  { "id": 2, "image": "/3.png" },
-  { "id": 3, "image": "/4.png" },
-  { "id": 4, "image": "/5.png" },
-  { "id": 5, "image": "/6.png" }
+  { "id": 1, "image": "/1.png" },
+  { "id": 2, "image": "/2.png" },
+  { "id": 3, "image": "/3.png" },
+  { "id": 4, "image": "/4.png" },
+  { "id": 5, "image": "/5.png" },
+  { "id": 6, "image": "/6.png" },
+  { "id": 7, "image": "/8.png" },
+  { "id": 8, "image": "/9.png" },
+  { "id": 9, "image": "/10.png" },
+  { "id": 10, "image": "/11.png" },
+  { "id": 11, "image": "/12.png" },
+  { "id": 12, "image": "/13.png" },
+  { "id": 13, "image": "/14.png" },
+  { "id": 14, "image": "/15.png" },
+  { "id": 15, "image": "/16.png" },
+  { "id": 16, "image": "/17.png" },
+  { "id": 17, "image": "/18.png" },
+  { "id": 18, "image": "/19.png" },
+  { "id": 19, "image": "/20.png" },
+  { "id": 20, "image": "/21.png" },
+  { "id": 21, "image": "/22.png" },
+  { "id": 22, "image": "/23.png" },
+  { "id": 23, "image": "/25.png" },
+  { "id": 24, "image": "/26.png" },
+
+
+  { "id": 27, "image": "/ANSH GULATI (1).png" }
 ]

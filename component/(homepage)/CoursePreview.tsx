@@ -7,18 +7,18 @@ import { ArrowRight, BookOpen, GraduationCap } from "lucide-react";
 
 const courses = [
   {
-    id: "class-12-accounts",
-    title: "Class 12: Accounts",
+    id: "accountancy-class-12",
+    title: "Class 12: Accountancy",
     shortDescription:
-      "Complete syllabus coverage with focus on board exam patterns and practical logic.",
+      "Complete Accountancy syllabus coverage with focus on board exam patterns, practical problems, and scoring strategies.",
     image: "/commercecoahing.jpeg",
     tag: "Board Special",
   },
   {
-    id: "class-11-accounts",
-    title: "Class 11: Accounts",
+    id: "accountancy-class-11",
+    title: "Class 11: Accountancy",
     shortDescription:
-      "Build a rock-solid foundation in Microeconomics and Statistics from scratch.",
+      "Build a strong foundation in Accountancy concepts, journal entries, and financial statements from the beginning.",
     image: "/class12h.jpeg",
     tag: "Foundation",
   },

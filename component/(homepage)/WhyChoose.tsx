@@ -27,9 +27,9 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Laptop className="w-8 h-8" />,
-      title: "Digital Integration",
+      title: "Chapter-wise Tests",
       description:
-        "Modern learning with digital notes, WhatsApp support, and a dedicated scholarship portal.",
+        "Rigorous testing after every chapter completion to track progress.",
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
@@ -45,9 +45,9 @@ const WhyChooseUs = () => {
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: "Scholarship Programs",
+      title: "Exam-Oriented Strategy",
       description:
-        "Rewarding merit through our custom scholarship calculator and performance-based incentives.",
+        "Proven preparation techniques specifically designed for board exam success.",
     },
   ];
 

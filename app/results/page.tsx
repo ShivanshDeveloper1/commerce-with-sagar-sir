@@ -111,7 +111,7 @@ export default function ResultsPage() {
                     </span>
                   </div>
                   <h3 className="text-white text-base md:text-lg font-black tracking-tight">
-                    Student Rank #{item.id}
+                    Toppers
                   </h3>
                 </div>
 

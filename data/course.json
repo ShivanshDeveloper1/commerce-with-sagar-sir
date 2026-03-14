@@ -1,28 +1,28 @@
 [
-  {
-    "id": "commerce-class-11",
-    "title": "Class 11 Commerce Coaching in Saharanpur",
-    "image": "/commercecoahing.jpeg",
-    "shortDescription": "Start your journey with the best commerce faculty in Saharanpur. Expert guidance for Accountancy & Economics.",
-    "fullDescription": "Join the top-rated Class 11 Commerce coaching in Saharanpur. We focus on building a strong foundation in Accountancy, Business Studies, and Economics. Our specialized commerce batch ensures you stay ahead from day one. #CommerceSaharanpur #Class11Commerce",
-    "subjects": ["Accountancy", "Business Studies", "Economics"],
-    "highlights": ["Conceptual Clarity", "Regular Class Tests", "Handwritten Commerce Notes"],
-    "faqs": [
-      { "q": "Where is the coaching located?", "a": "We are located in Saharanpur, providing the best environment for commerce students." },
-      { "q": "Is this batch only for Class 11?", "a": "Yes, this is a dedicated batch for Class 11 Commerce students." }
-    ]
-  },
-  {
-    "id": "commerce-class-12",
-    "title": "Class 12 Commerce Coaching in Saharanpur",
-    "image": "/class12h.jpeg",
-    "shortDescription": "Ace your Class 12 Boards and CUET with Saharanpur's leading commerce experts. Target 95%+",
-    "fullDescription": "Leading coaching center in Saharanpur for Class 12 Commerce. We offer intensive revision, mock tests, and specialized preparation for Board exams and CUET. Join the best commerce institute in Saharanpur to secure your future. #SaharanpurEducation #Class12Commerce",
-    "subjects": ["Advanced Accounts", "Macro Economics", "Management Studies"],
-    "highlights": ["Board Exam Special Revision", "CUET Preparation", "Previous Year Paper Solving"],
-    "faqs": [
-      { "q": "Do you provide mock tests?", "a": "Yes, we conduct weekly mock tests based on the latest board patterns in Saharanpur." },
-      { "q": "What subjects are covered?", "a": "We cover all core commerce subjects including Accounts and Economics." }
-    ]
-  }
+{
+  "id": "accountancy-class-11",
+  "title": "Class 11 Accountancy Coaching in Saharanpur",
+  "image": "/commercecoahing.jpeg",
+  "shortDescription": "Start your journey with the best Accountancy coaching in Saharanpur. Expert guidance for Accounts & Economics.",
+  "fullDescription": "Join the top-rated Class 11 Accountancy coaching in Saharanpur. We focus on building a strong foundation in Accountancy, Business Studies, and Economics. Our specialized Accounts batch ensures strong conceptual clarity and exam-ready preparation from day one. This is one of the most trusted Accountancy coaching classes in Saharanpur for Class 11 students aiming for top results. #AccountancySaharanpur #Class11Accounts",
+  "subjects": ["Accountancy", "Business Studies", "Economics"],
+  "highlights": ["Conceptual Clarity", "Regular Class Tests", "Handwritten Accountancy Notes"],
+  "faqs": [
+    { "q": "Where is the coaching located?", "a": "We are located in Saharanpur, providing the best learning environment for Accountancy students." },
+    { "q": "Is this batch only for Class 11?", "a": "Yes, this is a dedicated batch for Class 11 students preparing for Accountancy and related commerce subjects." }
+  ]
+},
+ {
+  "id": "accountancy-class-12",
+  "title": "Class 12 Accountancy Coaching in Saharanpur",
+  "image": "/class12h.jpeg",
+  "shortDescription": "Ace your Class 12 Boards and CUET with Saharanpur's leading Accountancy coaching. Target 95%+ in Accounts.",
+  "fullDescription": "Leading coaching center in Saharanpur for Class 12 Accountancy preparation. We offer intensive revision, mock tests, and specialized preparation for Board exams and CUET. Join one of the best Accountancy coaching institutes in Saharanpur to master advanced accounts concepts and score top marks in Class 12 board exams. #AccountancyCoachingSaharanpur #Class12Accounts",
+  "subjects": ["Advanced Accountancy", "Macro Economics", "Business Studies"],
+  "highlights": ["Board Exam Special Revision", "CUET Preparation", "Previous Year Paper Solving"],
+  "faqs": [
+    { "q": "Do you provide mock tests?", "a": "Yes, we conduct weekly mock tests based on the latest board patterns to help Class 12 Accountancy students in Saharanpur perform better in board exams." },
+    { "q": "What subjects are covered?", "a": "We cover all core subjects including Advanced Accountancy, Economics, and Business Studies." }
+  ]
+}
 ]

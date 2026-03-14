@@ -25,7 +25,7 @@ const reviews = [
   {
     id: 4,
     name: "Neha Singh",
-    role: "Alumni",
+    role: "Class 11 Student",
     review: "If you want to score 95%+, join the success batch. The teachers are incredibly dedicated to every single student.",
   },
   {
