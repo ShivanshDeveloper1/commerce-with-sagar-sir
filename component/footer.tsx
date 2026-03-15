@@ -31,12 +31,12 @@ const linkItem = {
 // SEO FIX: Added descriptive paths instead of "#"
 
 const socialLinks = [
-  {
-    icon: <Youtube size={20} />,
-    label: "YouTube",
-    href: "https://youtube.com/@yourchannel",
-    color: "hover:text-red-600",
-  },
+  // {
+  //   icon: <Youtube size={20} />,
+  //   label: "YouTube",
+  //   href: "https://youtube.com/@yourchannel",
+  //   color: "hover:text-red-600",
+  // },
   {
     icon: <Instagram size={20} />,
     label: "Instagram",
@@ -50,22 +50,22 @@ const socialLinks = [
     href: "https://wa.me/8218615688",
     color: "hover:text-green-500",
   },
-  {
-    icon: <Facebook size={20} />,
-    label: "Facebook",
-    href: "https://facebook.com/yourpage",
-    color: "hover:text-blue-600",
-  },
+  // {
+  //   icon: <Facebook size={20} />,
+  //   label: "Facebook",
+  //   href: "https://facebook.com/yourpage",
+  //   color: "hover:text-blue-600",
+  // },
 ];
 
 const courses = [
-  { name: "Commerce Class 11", href: "/courses/commerce-class-11" },
+  { name: "Accountancy Class 11", href: "/courses" },
 
-  { name: "Commerce Class 12", href: "/courses/commerce-class-12" },
+  { name: "Accountancy Class 12", href: "/courses" },
 ];
 
 const quickLinks = [
-  { name: "About Sharan Sir", href: "/about" },
+  { name: "About Sagar Sir", href: "/about" },
   { name: "Free Notes PDF", href: "" },
 
   { name: "Test Series", href: "" },
@@ -122,7 +122,7 @@ export default function CommerceFooter() {
               </div>
               <div>
                 <div className="font-serif text-lg font-bold text-white leading-tight">
-                  Commerce with Sharan Sir
+                  Commerce with Sagar Sir
                 </div>
                 <div className="text-[10px] font-medium text-blue-400 tracking-widest uppercase mt-0.5">
                   Commerce Academy
@@ -135,8 +135,8 @@ export default function CommerceFooter() {
               custom={0.1}
               className="text-sm text-slate-400 leading-relaxed mb-6 pr-4"
             >
-              India's most trusted commerce coaching institute. Master Commerce
-              Studies with Sharan Sir's unique teaching methodology.
+              Saharanpur's most trusted Accountancy  coaching institute. Master Commerce
+              Studies with Sagar Sir's unique teaching methodology.
             </motion.p>
 
             <motion.div
@@ -289,7 +289,7 @@ export default function CommerceFooter() {
         <p className="text-[13px] text-slate-500">
           © {new Date().getFullYear()}{" "}
           <span className="text-blue-400 font-medium">
-            Commerce with Sharan Sir
+            Commerce with Sagar Sir
           </span>
           . All rights reserved.
         </p>
@@ -298,7 +298,7 @@ export default function CommerceFooter() {
           {["Privacy Policy", "Terms of Use", "Refund Policy"].map((l) => (
             <a
               key={l}
-              href={`/${l.toLowerCase().replace(/ /g, "-")}`}
+              href={`/`}
               className="text-xs text-slate-500 hover:text-blue-400 transition-colors"
             >
               {l}
@@ -307,7 +307,7 @@ export default function CommerceFooter() {
         </div>
 
         <p className="text-xs text-slate-500 flex items-center">
-          Made with <HeartBeat /> for Commerce students
+          Made By Shivansh for Commerce with Sagar Sir
         </p>
       </motion.div>
     </footer>

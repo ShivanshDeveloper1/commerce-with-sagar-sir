@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, ChevronDown, HelpCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutAndFAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -129,9 +130,9 @@ const AboutAndFAQ = () => {
                 Success isn't just about memorizing—it's about logic. Our
                 pedagogy makes complex concepts intuitive.
               </p>
-              <button className="w-full sm:w-auto bg-white text-blue-900 font-bold px-8 py-4 rounded-full hover:bg-blue-50 transition-colors">
+              <Link href={'/contact'}  className="w-full sm:w-auto bg-white text-blue-900 font-bold px-8 py-4 rounded-full hover:bg-blue-50 transition-colors">
                 Book a Demo Class
-              </button>
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
