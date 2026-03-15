@@ -12,11 +12,11 @@ const ImageContainer = () => {
       <AnimateImageContainer>
         <div>
           <Image
-            src={"/student2.webp"}
+            src={"/mainImage.png"}
             alt="Student Image"
             height={1000}
             width={1000}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
       </AnimateImageContainer>
