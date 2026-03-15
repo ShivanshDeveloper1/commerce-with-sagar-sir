@@ -5,7 +5,7 @@ import React from 'react'
 const AboutVisionary = () => {
   const stats = [
     { label: "YEARS", value: "10+" },
-    { label: "STUDENTS", value: "5000+" },
+    { label: "STUDENTS", value: "3000+" },
     { label: "RESULTS", value: "99.9%" },
   ]
 

@@ -13,7 +13,7 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const message = `Hello Amit Sir, I would like to enroll.%0A%0A*Name:* ${formData.name}%0A*Class:* ${formData.selectedClass}`;
+    const message = `Hello Sagar Sir, I would like to enroll.%0A%0A*Name:* ${formData.name}%0A*Class:* ${formData.selectedClass}`;
     
     // Small delay to let the user see the "loading" animation
     setTimeout(() => {
