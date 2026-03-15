@@ -26,7 +26,7 @@ export default function ResultsPreview() {
               ✦ Academic Excellence ✦
             </span>
             <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
-              Our <span className="text-fuchsia-400">Achievers</span>
+              Some of our Good Achievers <span className="text-fuchsia-400">till date</span>
             </h2>
           </div>
           <p className="text-purple-100 max-w-md font-bold leading-relaxed">

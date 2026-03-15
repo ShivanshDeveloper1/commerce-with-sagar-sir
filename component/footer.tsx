@@ -250,30 +250,7 @@ export default function CommerceFooter() {
               ))}
             </div>
 
-            <div>
-              <div className="inline-flex items-center gap-1.5 bg-blue-900/30 border border-blue-800/50 rounded-full px-3 py-1 text-[11px] text-blue-400 font-medium mb-3">
-                📬 Newsletter
-              </div>
-              <p className="text-[13px] text-slate-400 mb-3">
-                Get free study tips & updates.
-              </p>
-              <div className="flex rounded-lg overflow-hidden border border-white/10 focus-within:border-blue-500 transition-colors">
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  onKeyDown={(e) => e.key === "Enter" && handleSubscribe()}
-                  className="flex-1 bg-white/5 border-none px-3.5 py-2.5 text-[13px] text-white outline-none"
-                />
-                <button
-                  onClick={handleSubscribe}
-                  className="bg-blue-600 px-4 py-2.5 text-[13px] font-medium hover:bg-blue-500 transition-colors whitespace-nowrap active:scale-95"
-                >
-                  {subscribed ? "✓ Done!" : "Subscribe"}
-                </button>
-              </div>
-            </div>
+           
           </motion.div>
         </div>
       </div>

@@ -78,6 +78,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <button
                 onClick={() => router.push("/contact")}
+                suppressHydrationWarning
                 className="bg-blue-600/80 hover:bg-blue-600
                 text-white px-6 py-2.5 rounded-xl font-semibold
                 transition-all duration-300
