@@ -18,22 +18,18 @@ export default function ResultsPage() {
         <section className="relative w-full py-16 md:py-28 px-6 text-center">
           <div className="absolute -top-16 -left-16 w-64 h-64 rounded-full opacity-10 bg-blue-400 blur-3xl" />
 
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="relative text-blue-400 text-[10px] md:text-xs tracking-[0.5em] uppercase font-black mb-4"
-          >
-            ✦ Sum Of our Good Scorer ✦
-          </motion.p>
-
           <motion.h1
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="relative text-white text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6"
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="relative mb-6 px-4"
           >
-            Results{" "}
-            <span className="text-blue-500 italic font-light drop-shadow-2xl">
-              2025
+            <span className="block text-[10px] md:text-xs tracking-[0.6em] text-blue-400/80 uppercase font-bold mb-3">
+              Wall of Fame
+            </span>
+            <span className="relative inline-block text-3xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-100 to-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">
+              ✦ Some Of Our Good Scorers ✦
             </span>
           </motion.h1>
 
@@ -52,7 +48,7 @@ export default function ResultsPage() {
         <div className="max-w-6xl mx-auto px-6 -mt-8 mb-20 relative z-10">
           <div className="grid grid-cols-3 bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl md:rounded-[3rem] overflow-hidden shadow-2xl">
             {[
-              { label: "Total Success", value: '500 +' },
+              { label: "Total Success", value: "500 +" },
               { label: "Top Scorers", value: "100+" },
               { label: "Batch", value: "2025" },
             ].map((s, idx) => (
@@ -129,7 +125,7 @@ export default function ResultsPage() {
         {/* Footer */}
         <div className="text-center py-16 border-t border-white/5 bg-white/5 backdrop-blur-xl">
           <p className="text-slate-500 text-[10px] font-bold tracking-[0.4em] uppercase">
-            Commerce Excellence Saharanpur •  Success Stories
+            Commerce Excellence Saharanpur • Success Stories
           </p>
         </div>
       </div>
