@@ -12,7 +12,8 @@ import {
 } from "lucide-react";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({ name: "", selectedClass: "" });
+  // Added selectedTiming to the state
+  const [formData, setFormData] = useState({ name: "", selectedClass: "", selectedTiming: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [shareUrl, setShareUrl] = useState("");
 
@@ -26,7 +27,8 @@ const ContactSection = () => {
   const handleEnroll = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const message = `Hello Sagar Sir, I would like to enroll.%0A%0A*Name:* ${formData.name}%0A*Class:* ${formData.selectedClass}`;
+    // Added Batch Timing to the WhatsApp message
+    const message = `Hello Sagar Sir, I would like to enroll.%0A%0A*Name:* ${formData.name}%0A*Class:* ${formData.selectedClass}%0A*Batch Timing:* ${formData.selectedTiming}`;
     
     setTimeout(() => {
       window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
@@ -61,6 +63,7 @@ const ContactSection = () => {
               <label className="text-white/80 font-bold text-sm ml-1 uppercase tracking-wider">Student Name</label>
               <input
                 type="text"
+                suppressHydrationWarning
                 required
                 className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white placeholder-white/20 focus:outline-none focus:ring-2 focus:ring-red-500 transition-all"
                 placeholder="Ex: Shivansh Singh"
@@ -75,13 +78,45 @@ const ContactSection = () => {
                 required
                 className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 appearance-none cursor-pointer transition-all"
                 value={formData.selectedClass}
-                onChange={(e) => setFormData({ ...formData, selectedClass: e.target.value })}
+                // Also reset the timing whenever they change their class
+                onChange={(e) => setFormData({ ...formData, selectedClass: e.target.value, selectedTiming: "" })}
               >
                 <option value="" className="bg-slate-900">Select your class</option>
                 <option value="Class 11th Accountancy" className="bg-slate-900">Class 11th Accountancy</option>
                 <option value="Class 12th Accountancy" className="bg-slate-900">Class 12th Accountancy</option>
               </select>
             </div>
+
+            {/* NEW BATCH TIMING DROPDOWN: Only shows if a class is selected */}
+            {formData.selectedClass && (
+              <div className="space-y-2">
+                <label className="text-white/80 font-bold text-sm ml-1 uppercase tracking-wider">Batch Timing</label>
+                <select
+                  required
+                  className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-red-500 appearance-none cursor-pointer transition-all"
+                  value={formData.selectedTiming}
+                  onChange={(e) => setFormData({ ...formData, selectedTiming: e.target.value })}
+                >
+                  <option value="" className="bg-slate-900">Select batch timing</option>
+                  
+                  {/* Timings for Class 11th */}
+                  {formData.selectedClass === "Class 11th Accountancy" && (
+                    <>
+                      <option value="3:00 PM to 4:00 PM" className="bg-slate-900">Batch 1: 3:00 PM - 4:00 PM</option>
+                      <option value="4:00 PM to 5:00 PM" className="bg-slate-900">Batch 2: 4:00 PM - 5:00 PM</option>
+                    </>
+                  )}
+
+                  {/* Timings for Class 12th */}
+                  {formData.selectedClass === "Class 12th Accountancy" && (
+                    <>
+                      <option value="1:45 PM to 2:45 PM" className="bg-slate-900">Batch 1: 1:45 PM - 2:45 PM</option>
+                      <option value="5:15 PM to 6:15 PM" className="bg-slate-900">Batch 2: 5:15 PM - 6:15 PM</option>
+                    </>
+                  )}
+                </select>
+              </div>
+            )}
 
             <button
               type="submit"
