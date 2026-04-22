@@ -1,11 +1,11 @@
 "use client";
 
-import { Book, ArrowRight, Star } from "lucide-react";
+import { Award, ChevronRight, CheckCircle, Star } from "lucide-react";
 import Image from "next/image";
 import { AnimateContainer, AnimateItem } from "./AnimateIn";
 import { useRouter } from "next/navigation";
 
-const images = [
+const studentFaces = [
   "https://images.unsplash.com/photo-1524069290683-0457abfe42c3",
   "https://images.unsplash.com/photo-1737825101103-c35677e6bd45",
   "https://images.unsplash.com/photo-1656266724105-302774929dfd",
@@ -16,119 +16,131 @@ const Homepage = () => {
   const router = useRouter();
 
   return (
-    <main className="relative min-h-screen overflow-x-hidden flex items-center flex-col pt-20 md:pt-32 px-4 z-10">
-      {/* Animated Background - Kept your original colors */}
-      <div className="fixed inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[30rem] h-[30rem] md:w-[50rem] md:h-[50rem] rounded-full bg-blue-400/20 blur-[120px] animate-blob"></div>
-        <div className="absolute top-[20%] right-[-5%] w-[25rem] h-[25rem] md:w-[40rem] md:h-[40rem] rounded-full bg-purple-400/20 blur-[120px] animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-[-10%] left-[10%] w-[30rem] h-[30rem] md:w-[45rem] md:h-[45rem] rounded-full bg-cyan-400/20 blur-[120px] animate-blob animation-delay-4000"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] md:bg-[size:32px_32px]"></div>
+    <main className="relative min-h-screen bg-[#020617] text-slate-50 overflow-hidden pt-24 md:pt-32 px-6">
+      {/* 1. Mirrored Background Accents */}
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+        {/* Swapped positions of the glows */}
+        <div className="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-emerald-500/10 blur-[130px]"></div>
+        <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-500/10 blur-[130px]"></div>
+        
+        <div className="absolute inset-0 opacity-[0.1]" 
+             style={{ backgroundImage: 'radial-gradient(#64748b 1px, transparent 1px)', backgroundSize: '30px 30px' }}>
+        </div>
       </div>
 
       <AnimateContainer>
-        <div className="flex flex-col items-center text-center max-w-6xl mx-auto">
-          {/* Badge */}
-          <AnimateItem>
-            <div className="bg-white/60 backdrop-blur-xl border border-blue-200/50 rounded-full py-2 px-4 md:px-5 flex gap-2 items-center mb-6 md:mb-8 shadow-xl">
-              <span className="bg-blue-600 p-1.5 rounded-full text-white">
-                <Book size={14} />
-              </span>
-              <p className="text-blue-900 text-[10px] md:text-sm font-bold tracking-widest uppercase">
-                Commerce With Sagar Sir
+        <div className="grid lg:grid-cols-12 gap-16 max-w-7xl mx-auto items-center">
+          
+          {/* LEFT COLUMN: Now the Visuals (5 Cols) */}
+          <div className="lg:col-span-5 order-2 lg:order-1 relative">
+            <AnimateItem>
+              <div className="relative group">
+                {/* Changed the frame style: solid offset instead of border */}
+                <div className="absolute -bottom-6 -left-6 w-full h-full bg-emerald-500/10 rounded-[2.5rem] -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+                
+                <div className="relative aspect-[3/4] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5">
+                  <Image
+                    src="/student4.jpg"
+                    alt="Coaching Success"
+                    fill
+                    className="object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700"
+                  />
+                  
+                  {/* Overlay Tag */}
+                  <div className="absolute top-6 left-6 bg-emerald-500 text-slate-900 px-4 py-1 rounded-lg font-black text-xs uppercase tracking-tighter">
+                    Top Rated 2026
+                  </div>
+                </div>
+
+                {/* New Floating Performance Card */}
+                <div className="absolute -right-8 top-1/2 -translate-y-1/2 bg-slate-900/80 backdrop-blur-xl p-5 rounded-2xl border border-emerald-500/20 shadow-2xl hidden md:block">
+                  <div className="flex flex-col gap-3">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-emerald-500/20 p-2 rounded-lg">
+                        <CheckCircle size={20} className="text-emerald-400" />
+                      </div>
+                      <span className="text-sm font-bold">Expert Faculty</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="bg-emerald-500/20 p-2 rounded-lg">
+                        <CheckCircle size={20} className="text-emerald-400" />
+                      </div>
+                      <span className="text-sm font-bold">Smart Curriculum</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimateItem>
+          </div>
+
+          {/* RIGHT COLUMN: Now the Content (7 Cols) - Aligned Right for distinct look */}
+          <div className="lg:col-span-7 order-1 lg:order-2 text-right flex flex-col items-end">
+            <AnimateItem>
+              <div className="inline-flex items-center gap-3 bg-emerald-950/30 border-r-4 border-emerald-500 px-5 py-2 rounded-l-xl mb-6 shadow-lg">
+                <span className="text-emerald-400 text-xs font-black tracking-[0.2em] uppercase">
+                  Authorized Learning Center
+                </span>
+                <Award size={18} className="text-emerald-400" />
+              </div>
+            </AnimateItem>
+
+            <AnimateItem>
+              <h1 className="text-5xl md:text-8xl font-black leading-[0.95] tracking-tighter text-white mb-8">
+                Build Your <br />
+                <span className="text-emerald-400 italic">Financial</span> <br />
+                Legacy.
+              </h1>
+              
+              <p className="text-slate-400 text-lg md:text-xl max-w-lg leading-relaxed mb-10 mr-0 ml-auto">
+                Step into the world of elite commerce education. <span className="text-emerald-400 font-bold">Sachin Sir</span> provides the strategic edge required for Saharanpur's top achievers.
               </p>
-            </div>
-          </AnimateItem>
+            </AnimateItem>
 
-          {/* Hero Heading */}
-          <AnimateItem>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-black text-slate-900 leading-[1.1] md:leading-[1]">
-              Elite{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                Commerce
-              </span>
-              <br className="hidden sm:block" />
-              <span className="inline-block">Coaching</span>
-              <span className="inline-flex mx-2 md:mx-3 align-middle rotate-3 shrink-0">
-                <Image
-                  src="/student4.jpg"
-                  alt="Students"
-                  height={80}
-                  width={160}
-                  className="rounded-2xl md:rounded-3xl object-cover object-top border-2 md:border-4 border-white shadow-2xl h-10 w-20 sm:h-14 sm:w-28 md:h-16 md:w-36"
-                />
-              </span>
-              <span className="inline-block">by Sachin</span>
-            </h1>
+            <AnimateItem>
+              <div className="flex flex-row-reverse flex-wrap gap-5">
+                <button
+                  onClick={() => router.push("/contact")}
+                  className="group bg-white text-slate-900 px-10 py-5 rounded-xl font-black text-lg transition-all flex items-center gap-3 hover:bg-emerald-400 shadow-xl"
+                >
+                  Get Started
+                  <ChevronRight size={22} className="group-hover:translate-x-1 transition-transform" />
+                </button>
+                
+                <button className="bg-transparent border-b-2 border-emerald-500/50 text-emerald-400 px-6 py-5 font-bold text-lg hover:border-emerald-400 transition-all">
+                  View Programs
+                </button>
+              </div>
+            </AnimateItem>
+          </div>
 
-            <p className="max-w-xl mx-auto text-center text-slate-500 mt-6 md:mt-8 text-base md:text-xl leading-relaxed font-medium px-2">
-              Join Saharanpur&apos;s most trusted academic community. Transform
-              your future with industry-leading commerce expertise.
-            </p>
-          </AnimateItem>
+        </div>
 
-          {/* CTA Button */}
-          <AnimateItem>
-            <div className="mt-8 md:mt-10 group relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full blur opacity-30 group-hover:opacity-60 transition duration-300"></div>
-              <button
-                onClick={() => router.push("/contact")}
-                className="relative bg-slate-900 hover:bg-blue-600 text-white px-8 md:px-12 py-4 md:py-5 rounded-full font-bold text-base md:text-lg flex items-center gap-3 transition-all active:scale-95 shadow-2xl"
-              >
-                Start Your Journey
-                <ArrowRight size={22} />
-              </button>
-            </div>
-          </AnimateItem>
-
-          {/* Social Proof Section */}
-          <AnimateItem>
-            <div className="flex flex-col md:flex-row items-center gap-6 mt-16 md:mt-20 bg-white/30 backdrop-blur-md p-6 rounded-[2rem] border border-white/60 shadow-xl mb-12">
-              <div className="flex -space-x-3 md:-space-x-4">
-                {images.map((url, index) => (
-                  <div
-                    key={index}
-                    className="relative h-12 w-12 md:h-16 md:w-16 rounded-full border-2 md:border-4 border-white overflow-hidden"
-                  >
-                    <Image
-                      src={url}
-                      alt="Student"
-                      fill
-                      className="object-cover"
-                    />
+        {/* BOTTOM SECTION: Social Proof with Reversed Alignment */}
+        <AnimateItem>
+          <div className="mt-32 pt-10 border-t border-slate-800/50 flex flex-col md:flex-row-reverse justify-between items-center gap-10 max-w-7xl mx-auto mb-20">
+            <div className="flex items-center gap-6 flex-row-reverse">
+              <div className="flex -space-x-3 flex-row-reverse space-x-reverse">
+                {studentFaces.map((url, i) => (
+                  <div key={i} className="h-14 w-14 rounded-2xl border-4 border-[#020617] overflow-hidden rotate-3 hover:rotate-0 transition-transform">
+                    <img src={url} alt="Student" className="w-full h-full object-cover" />
                   </div>
                 ))}
-                <div className="h-12 w-12 md:h-16 md:w-16 rounded-full border-2 md:border-4 border-white bg-blue-600 flex items-center justify-center text-white font-black text-xs md:text-sm">
-                  +8k
-                </div>
               </div>
-
-              <div className="flex flex-col items-center md:items-start gap-1">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star
-                        key={i}
-                        size={18}
-                        className="fill-yellow-400 text-yellow-400 md:w-5 md:h-5"
-                      />
-                    ))}
-                  </div>
-                  <span className="text-slate-900 font-black text-lg md:text-xl">
-                    4.9
-                  </span>
+              <div className="text-right">
+                <p className="text-white font-bold text-lg">8,000+ Success Stories</p>
+                <div className="flex justify-end gap-1">
+                   {[1,2,3,4,5].map(i => <Star key={i} size={12} className="fill-emerald-400 text-emerald-400" />)}
                 </div>
-
-                <p className="text-slate-600 font-semibold text-xs md:text-base">
-                  The{" "}
-                  <span className="text-blue-600 font-black">
-                    Gold Standard
-                  </span>{" "}
-                  in Saharanpur
-                </p>
               </div>
             </div>
-          </AnimateItem>
-        </div>
+            
+            <div className="flex gap-10 opacity-30 text-emerald-50 font-black text-xl tracking-widest italic">
+              <span>CBSE</span>
+              <span>ICSE</span>
+              <span>ISC</span>
+            </div>
+          </div>
+        </AnimateItem>
       </AnimateContainer>
     </main>
   );

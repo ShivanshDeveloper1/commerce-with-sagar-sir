@@ -1,81 +1,101 @@
+"use client";
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { CheckCircle2, Star, Users2 } from 'lucide-react'
 
 const AboutVisionary = () => {
   const stats = [
-    { label: "YEARS", value: "10+" },
-    { label: "STUDENTS", value: "3000+" },
-    { label: "RESULTS", value: "99.9%" },
+    { label: "Experience", value: "10+", icon: <Star size={16} className="text-emerald-400" /> },
+    { label: "Scholars", value: "3000+", icon: <Users2 size={16} className="text-emerald-400" /> },
+    { label: "Success Rate", value: "99%", icon: <CheckCircle2 size={16} className="text-emerald-400" /> },
   ]
 
   return (
-    <section className="min-h-screen w-full flex items-center justify-center py-10 md:py-16 px-4 md:px-20 bg-transparent overflow-hidden">
-      <div className="max-w-7xl w-full flex flex-col lg:flex-row items-stretch gap-0 border border-white/10 rounded-[2rem] md:rounded-[2.5rem] overflow-hidden bg-blue-950/20 backdrop-blur-sm shadow-2xl">
+    <section className="relative min-h-screen w-full flex items-center justify-center py-24 px-6 md:px-12 lg:px-24 bg-[#020617]">
+      
+      {/* Decorative background element */}
+      <div className="absolute top-0 right-0 w-[50%] h-full bg-emerald-500/5 -skew-x-12 transform origin-top" />
+
+      <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
         
-        {/* Left Side: Image Section */}
-        {/* Adjusted height for mobile (aspect-square) to ensure the face is visible */}
-        <div className="relative w-full lg:w-1/2 aspect-square lg:aspect-auto min-h-[350px] lg:min-h-[600px]">
-          <Image
-            src='/siruse.png' 
-            alt="The Visionary"
-            fill
-            className="object-cover object-top"
-            priority
-          />
-          
-          {/* Slanted Overlay - Hidden on mobile to keep the image clean */}
-          <div 
-            className="absolute inset-0 bg-blue-900/40 mix-blend-multiply hidden lg:block"
-            style={{ clipPath: 'polygon(85% 0, 100% 0, 100% 100%, 70% 100%)' }}
-          ></div>
-
-          {/* Gold Medal Badge - Scaled down for mobile */}
-          <div className="absolute top-6 right-6 md:top-10 md:right-10 w-14 h-14 md:w-20 md:h-20 bg-yellow-500 rounded-full flex items-center justify-center shadow-[0_0_25px_rgba(234,179,8,0.4)] border-4 border-yellow-300 animate-pulse z-10">
-             <span className="text-2xl md:text-4xl">🏅</span>
-          </div>
-        </div>
-
-        {/* Right Side: Content Area */}
-        <div className="w-full lg:w-1/2 p-6 md:p-16 flex flex-col justify-center space-y-6 md:space-y-8 relative">
-          {/* Subtle Background Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-blue-600/10 blur-[80px] md:blur-[100px] -z-10"></div>
-
-          <div className="space-y-1 md:space-y-2 text-center lg:text-left">
-            <h3 className="text-white text-3xl md:text-6xl font-black tracking-tighter uppercase">
-              The Visionary
-            </h3>
-            <h2 className="text-blue-500 text-4xl md:text-6xl font-black tracking-tighter uppercase">
-              Sagar Sir
+        {/* 1. CONTENT AREA (Left) */}
+        <div className="order-2 lg:order-1 space-y-10">
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <div className="h-[2px] w-12 bg-emerald-500"></div>
+              <span className="text-emerald-500 font-black tracking-[0.3em] uppercase text-xs">
+                The Architect of Success
+              </span>
+            </div>
+            
+            <h2 className="text-6xl md:text-8xl font-black text-white leading-none tracking-tighter">
+              Sagar <br />
+              <span className="text-emerald-500 italic">Sir.</span>
             </h2>
           </div>
 
-          <p className="text-gray-300 text-base md:text-xl leading-relaxed font-medium text-center lg:text-left">
-            C.A Finalist with over 10 years of transformative teaching experience. Recognized as Saharanpur's most innovative Accountancy educator, having guided thousands of students to academic excellence.
-          </p>
+          <div className="relative">
+            {/* Quote decoration */}
+            <span className="absolute -top-8 -left-4 text-emerald-500/20 text-8xl font-serif">“</span>
+            <p className="text-slate-400 text-lg md:text-2xl leading-relaxed font-medium pl-6 border-l border-emerald-500/20">
+              A <span className="text-white font-bold">C.A Finalist</span> with over a decade of teaching mastery. 
+              Sagar Sir has redefined Accountancy education in Saharanpur, 
+              turning complex numbers into career-defining milestones for thousands of students.
+            </p>
+          </div>
 
-          {/* Statistics Grid - Optimized for tight mobile screens */}
-          <div className="grid grid-cols-3 gap-2 md:gap-6">
+          {/* 2. STATS (Minimalist Layout) */}
+          <div className="flex flex-wrap gap-8 md:gap-12 pt-4">
             {stats.map((stat, index) => (
-              <div 
-                key={index} 
-                className="bg-blue-900/30 border border-blue-500/20 p-3 md:p-6 rounded-xl md:rounded-2xl text-center hover:border-blue-400/50 transition-colors shadow-lg"
-              >
-                <div className="text-xl md:text-4xl font-black text-blue-500 italic">
-                  {stat.value}
+              <div key={index} className="group">
+                <div className="flex items-center gap-2 mb-1">
+                  {stat.icon}
+                  <span className="text-4xl font-black text-white group-hover:text-emerald-400 transition-colors">
+                    {stat.value}
+                  </span>
                 </div>
-                <div className="text-[8px] md:text-xs font-bold text-white tracking-widest mt-1 uppercase">
+                <p className="text-slate-500 text-[10px] uppercase font-black tracking-widest pl-6">
                   {stat.label}
-                </div>
+                </p>
               </div>
             ))}
           </div>
 
-          {/* Bottom Action - Centered on mobile */}
-          <div className="pt-4 flex justify-center lg:justify-start">
-             <Link href={'/contact'} className="w-full md:w-auto text-center bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-black text-lg shadow-[0_10px_20px_rgba(0,0,0,0.3)] transform transition hover:-translate-y-1 active:scale-95">
-                ENROLL NOW
-             </Link>
+          <div className="pt-6">
+            <Link href={'/contact'} 
+                  className="inline-block bg-white text-slate-950 px-12 py-5 rounded-2xl font-black text-lg hover:bg-emerald-400 transition-all shadow-xl hover:shadow-emerald-500/20">
+              JOIN THE ACADEMY
+            </Link>
+          </div>
+        </div>
+
+        {/* 3. IMAGE SECTION (Right) */}
+        <div className="order-1 lg:order-2 relative">
+          <div className="relative aspect-[4/5] w-full max-w-md mx-auto">
+            
+            {/* Background geometric shapes */}
+            <div className="absolute -top-10 -right-10 w-full h-full border-2 border-emerald-500/10 rounded-[3rem] -z-10" />
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-emerald-500/20 rounded-full blur-3xl -z-10" />
+
+            <div className="relative h-full w-full rounded-[3rem] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/5">
+              <Image
+                src='/siruse.png' 
+                alt="Expert Faculty"
+                fill
+                className="object-cover object-top hover:scale-105 transition-transform duration-700"
+                priority
+              />
+              
+              {/* Modern Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent opacity-80" />
+              
+              {/* Verified Badge */}
+              <div className="absolute bottom-8 left-8 bg-emerald-500 text-slate-900 px-6 py-3 rounded-2xl flex items-center gap-2 shadow-2xl">
+                 <CheckCircle2 size={20} />
+                 <span className="font-black text-xs uppercase tracking-tighter">Verified Expert</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -84,4 +104,4 @@ const AboutVisionary = () => {
   )
 }
 
-export default AboutVisionary
+export default AboutVisionary;
