@@ -80,7 +80,7 @@ const AboutVisionary = () => {
 
             <div className="relative h-full w-full rounded-[3rem] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] border border-white/5">
               <Image
-                src='/siruse.png' 
+               src='https://res.cloudinary.com/dkfe8naf5/image/upload/v1777207859/hosw1avwdfdglidoe22y.jpg' 
                 alt="Expert Faculty"
                 fill
                 className="object-cover object-top hover:scale-105 transition-transform duration-700"

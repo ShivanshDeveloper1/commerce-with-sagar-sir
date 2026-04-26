@@ -186,7 +186,7 @@ const ContactSection = () => {
             className="group relative rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl h-[250px]"
           >
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.123456789!2d77.5!3d29.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU0JzAwLjAiTiA3N8KwMzAnMDAuMCJF!5e0!3m2!1sen!2sin!4v123456789" 
+             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3650.4502422176497!2d77.53819283!3d29.95355893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eeb1873339f4b%3A0x3e0764a79afcbd77!2sCommerce%20with%20Sagar%20Sir!5e1!3m2!1sen!2sin!4v1777206445733!5m2!1sen!2sin"
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -221,3 +221,15 @@ const ContactLink = ({ icon, label, value, href }) => (
 );
 
 export default ContactSection;
+
+
+
+
+
+
+
+
+
+
+
+

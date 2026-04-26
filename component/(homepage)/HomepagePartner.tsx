@@ -71,7 +71,7 @@ const HomepagePartner = () => {
             
             <div className="relative h-full w-full rounded-[2.5rem] overflow-hidden bg-slate-900 border border-white/5 shadow-2xl">
               <Image 
-                src='/siruse.png' 
+                src='https://res.cloudinary.com/dkfe8naf5/image/upload/v1777207859/hosw1avwdfdglidoe22y.jpg' 
                 alt='Expert Faculty' 
                 fill
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
